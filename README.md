@@ -1,4 +1,4 @@
-# lesswork-hash
+# lesswork-hashids
 This is a hashids provider for the `lesswork-framework`.
 
 # Installation
