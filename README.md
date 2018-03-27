@@ -16,7 +16,7 @@ const providers = [
 
 const aliases = {
   ...
-  Hash: 'Lesswork/Hash',
+  Hashids: 'Lesswork/Hashids',
 };
 ```
 
@@ -24,7 +24,7 @@ const aliases = {
 See [hashids](https://www.npmjs.com/package/hashids) for full usage information.
 
 ```js
-const Hash = use('Hash');
+const Hashids = use('Hashids');
 
-console.log(Hash.encode(1));
+console.log(Hashids.encode(1));
 ```

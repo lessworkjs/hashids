@@ -1,6 +1,6 @@
 {
   "name": "lesswork-hashids",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "hashids service provider for lesswork-framework",
   "main": "index.js",
   "scripts": {

@@ -14,7 +14,7 @@ class HashProvider extends ServiceProvider {
    * @return {void}
    */
   * register() {
-    this.app.singleton('Lesswork/Hash', function (app) {
+    this.app.singleton('Lesswork/Hashids', function (app) {
       const Hash = require('../index');
       const key = env('APP_KEY');
 
