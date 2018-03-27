@@ -1,0 +1,22 @@
+{
+  "name": "lesswork-hashids",
+  "version": "0.0.1",
+  "description": "hashids service provider for lesswork-framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lessworkjs/lesswork-hashids.git"
+  },
+  "author": "William Bowman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lessworkjs/lesswork-hashids/issues"
+  },
+  "homepage": "https://github.com/lessworkjs/lesswork-hashids#readme",
+  "dependencies": {
+    "hashids": "^1.1.4"
+  }
+}
