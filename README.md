@@ -21,7 +21,7 @@ const aliases = {
 ```
 
 # Usage
-See (hashids)[https://www.npmjs.com/package/hashids] for full usage information.
+See [hashids](https://www.npmjs.com/package/hashids) for full usage information.
 
 ```js
 const Hash = use('Hash');
