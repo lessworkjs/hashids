@@ -11,7 +11,7 @@ Register the provider and alias in your `config/app.js` file.
 ```js
 const providers = [
   ...
-  'lesswork-hashids/Providers/HashProvider',
+  'lesswork-hashids/providers/HashProvider',
 ];
 
 const aliases = {
