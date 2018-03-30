@@ -16,13 +16,16 @@ class HashProvider extends ServiceProvider {
   * register() {
     this.app.singleton('Lesswork/Hashids', function (app) {
       const Hash = require('../src/');
-      const key = env('APP_KEY');
+
+      const key = config('hashids.key', config('APP_KEY'));
+      const length = config('hashids.length');
+      const alaphabet = config('hashids.alaphabet');
 
       if (!key) {
         throw `Missing 'APP_KEY' in your '.env.js' file.`;
       }
 
-      return new Hash(key);
+      return new Hash(key, length, alaphabet);
     });
   }
 }
