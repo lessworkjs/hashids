@@ -1,8 +1,8 @@
-'use strict';
-
 const {
-  ServiceProvider
-} = require('adonis-fold');
+  ServiceProvider,
+} = require('@adonisjs/fold');
+
+const Hash = require('../src/');
 
 class HashProvider extends ServiceProvider {
   /**
@@ -13,16 +13,17 @@ class HashProvider extends ServiceProvider {
    *
    * @return {void}
    */
-  * register() {
-    this.app.singleton('Lesswork/Hashids', function (app) {
-      const Hash = require('../src/');
+  register() {
+    this.app.singleton('Lesswork/Hashids', (app) => {
+
+      const config = app.use('Config');
 
       const key = config('hashids.key', config('APP_KEY'));
       const length = config('hashids.length');
       const alaphabet = config('hashids.alaphabet');
 
       if (!key) {
-        throw `Missing 'APP_KEY' in your '.env.js' file.`;
+        throw new Error('Missing \'APP_KEY\' in your \'.env.js\' file.');
       }
 
       return new Hash(key, length, alaphabet);

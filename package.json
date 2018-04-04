@@ -1,6 +1,6 @@
 {
   "name": "lesswork-hashids",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "hashids service provider for lesswork-framework",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/lessworkjs/lesswork-hashids#readme",
   "dependencies": {
+    "@adonisjs/fold": "^4.0.7",
     "hashids": "^1.1.4"
   }
 }
