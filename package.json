@@ -1,21 +1,21 @@
 {
   "name": "@lessworkjs/hashids",
-  "version": "0.0.7",
-  "description": "hashids service provider for lesswork-framework",
+  "version": "0.0.9",
+  "description": "hashids service provider for Lessworkjs or Adonisjs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lessworkjs/lesswork-hashids.git"
+    "url": "git+https://github.com/lessworkjs/hashids.git"
   },
   "author": "William Bowman",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lessworkjs/lesswork-hashids/issues"
+    "url": "https://github.com/lessworkjs/hashids/issues"
   },
-  "homepage": "https://github.com/lessworkjs/lesswork-hashids#readme",
+  "homepage": "https://github.com/lessworkjs/hashids#readme",
   "dependencies": {
     "@adonisjs/fold": "^4.0.7",
     "hashids": "^1.1.4"
