@@ -14,7 +14,7 @@ class HashProvider extends ServiceProvider {
    * @return {void}
    */
   register() {
-    this.app.singleton('Lesswork/Hashids', (app) => {
+    this.app.singleton('Lesswork/Src/Hashids', (app) => {
 
       const config = app.use('Config');
 
@@ -23,11 +23,14 @@ class HashProvider extends ServiceProvider {
       const alaphabet = config('hashids.alaphabet');
 
       if (!key) {
-        throw new Error('Missing \'APP_KEY\' in your \'.env.js\' file.');
+        throw new Error('Missing \'APP_KEY\' in your \'.env\' file.');
       }
 
       return new Hash(key, length, alaphabet);
     });
+
+    this.app.alias('Lesswork/Src/Hashids', 'Adonis/Src/Hashids');
+    this.app.alias('Lesswork/Src/Hashids', 'Hashids');
   }
 }
 

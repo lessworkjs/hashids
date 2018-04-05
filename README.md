@@ -1,9 +1,9 @@
 # lesswork-hashids
-This is a hashids provider for the `lesswork-framework`.
+This is a hashids provider for the [lessworkjs](https://lesswork.io/) and [adonisjs](https://adonisjs.com/) frameworks.
 
 # Installation
 ```bash 
-npm i --save @lessworkjs/hashids
+npm i  @lessworkjs/hashids
 ```
 
 Register the provider and alias in your `config/app.js` file.
@@ -14,10 +14,6 @@ const providers = [
   '@lessworkjs/hashids/providers/HashProvider',
 ];
 
-const aliases = {
-  ...
-  Hashids: 'Lesswork/Hashids',
-};
 ```
 
 # Configuration
