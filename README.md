@@ -3,7 +3,7 @@ This is a hashids provider for the `lesswork-framework`.
 
 # Installation
 ```bash 
-npm i --save lesswork-hashids
+npm i --save @lessworkjs/hashids
 ```
 
 Register the provider and alias in your `config/app.js` file.
@@ -11,7 +11,7 @@ Register the provider and alias in your `config/app.js` file.
 ```js
 const providers = [
   ...
-  'lesswork-hashids/providers/HashProvider',
+  '@lessworkjs/hashids/providers/HashProvider',
 ];
 
 const aliases = {
